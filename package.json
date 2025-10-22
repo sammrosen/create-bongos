@@ -1,0 +1,10 @@
+{
+  "name": "create-bongos",
+  "version": "0.0.1",
+  "description": "CLI to scaffold a Bongos Base project",
+  "bin": {
+    "create-bongos": "bin/index.mjs"
+  },
+  "type": "module",
+  "license": "MIT"
+}
