@@ -28,8 +28,16 @@ function validateProjectName(name: string): boolean {
 
 function displayWelcome(): void {
   console.log();
-  console.log(chalk.bold.cyan('🥁  Welcome to Bongos!'));
-  console.log(chalk.gray('━'.repeat(50)));
+  console.log(chalk.cyan('            Welcome to...'));
+  console.log();
+  console.log(chalk.bold.cyan(' ██████╗  ██████╗ ███╗   ██╗ ██████╗  ██████╗ ███████╗'));
+  console.log(chalk.bold.cyan(' ██╔══██╗██╔═══██╗████╗  ██║██╔════╝ ██╔═══██╗██╔════╝'));
+  console.log(chalk.bold.cyan(' ██████╔╝██║   ██║██╔██╗ ██║██║  ███╗██║   ██║███████╗'));
+  console.log(chalk.bold.cyan(' ██╔══██╗██║   ██║██║╚██╗██║██║   ██║██║   ██║╚════██║'));
+  console.log(chalk.bold.cyan(' ██████╔╝╚██████╔╝██║ ╚████║╚██████╔╝╚██████╔╝███████║'));
+  console.log(chalk.bold.cyan(' ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚══════╝'));
+  console.log();
+  console.log(chalk.gray('   Express + TypeScript + PostgreSQL + Prisma + Redis + Passport'));
   console.log();
 }
 
@@ -49,6 +57,9 @@ function displayNextSteps(projectName: string): void {
   console.log();
   console.log(chalk.gray('Your Express + TypeScript + PostgreSQL + Prisma + Redis API'));
   console.log(chalk.gray('is ready to go! Happy coding! 🚀'));
+  console.log();
+  console.log(chalk.yellow('💡 Tip: ') + chalk.gray('Server shows dependency status at http://localhost:3000'));
+  console.log(chalk.gray('        (works even without .env configured)'));
   console.log();
 }
 
