@@ -2,9 +2,41 @@
   "name": "create-bongos",
   "version": "0.0.1",
   "description": "CLI to scaffold a Bongos Base project",
-  "bin": {
-    "create-bongos": "bin/index.mjs"
-  },
   "type": "module",
-  "license": "MIT"
+  "bin": {
+    "create-bongos": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "template",
+    "express",
+    "typescript",
+    "postgresql",
+    "prisma",
+    "redis",
+    "bongos"
+  ],
+  "author": "Sam Rosen",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "degit": "^2.8.4",
+    "ora": "^7.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.3.3"
+  }
 }
